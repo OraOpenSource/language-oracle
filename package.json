@@ -15,7 +15,7 @@
   "bugs" : {
       "url": "https://github.com/tschf/language-oracle/issues"
   },
-  "license": "GNU GPL v2",
+  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
