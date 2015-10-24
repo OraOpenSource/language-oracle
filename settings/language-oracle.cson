@@ -1,0 +1,5 @@
+".source.plsql.oracle":
+  editor:
+    commentStart: "-- "
+    increaseIndentPattern: "(?i)^\\s*(is|as|begin|if|then|else|elsif|loop|exception)\\b"
+    decreaseIndentPattern: "(?i)^\\s*(is|as|begin|end|then|else|elsif|exception)\\b"
