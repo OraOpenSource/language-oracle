@@ -1,24 +1,23 @@
 {
   "name": "language-oracle",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Oracle PL/SQL language support in Atom",
   "keywords": [
-      "oracle",
-      "plsql",
-      "sql",
-      "PL/SQL"
+    "oracle",
+    "plsql",
+    "sql",
+    "PL/SQL"
   ],
   "repository": {
-      "type": "git",
-      "url": "https://github.com/OraOpenSource/language-oracle"
+    "type": "git",
+    "url": "https://github.com/OraOpenSource/language-oracle"
   },
-  "bugs" : {
-      "url": "https://github.com/OraOpenSource/language-oracle/issues"
+  "bugs": {
+    "url": "https://github.com/OraOpenSource/language-oracle/issues"
   },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
