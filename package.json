@@ -10,10 +10,10 @@
   ],
   "repository": {
       "type": "git",
-      "url": "https://github.com/tschf/language-oracle"
+      "url": "https://github.com/OraOpenSource/language-oracle"
   },
   "bugs" : {
-      "url": "https://github.com/tschf/language-oracle/issues"
+      "url": "https://github.com/OraOpenSource/language-oracle/issues"
   },
   "license": "MIT",
   "engines": {
