@@ -53,7 +53,7 @@ patterns: [
         name: "keyword.other.oracle"
       "2":
         name: "entity.name.type.oracle"
-    match: "(?i)\\b(view)\\s+(\\S+)"
+    match: "(?i)\\b(view|materialized view)\\s+(\\S+)"
     name: "meta.view.oracle"
   }
   {
