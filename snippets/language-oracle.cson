@@ -1,77 +1,55 @@
 ".source.plsql.oracle":
-  "New Function":
-    prefix: "func"
-    body: '''
-      FUNCTION ${1:func_name}(
-          po_result_code   OUT NUMBER)
-      RETURN ${2:RETURN_TYPE}
-      IS
-        l_procname VARCHAR2(30) := '${1/_(.)/\\u$1/g}';
-      BEGIN
-        
-        $0
-
-        EXCEPTION
-          WHEN OTHERS THEN
-            raise;
-      END $1;
-    '''
-  "New Procedure":
-    prefix: "proc"
-    body: '''
-      PROCEDURE ${1:proc_name}(
-          po_result_code   OUT NUMBER)
-      IS
-        l_procname VARCHAR2(30) := '${1/_(.)/\\u$1/g}';
-      BEGIN
-
-        $0
-
-        EXCEPTION
-          WHEN OTHERS THEN
-            raise;
-      END $1;
-    '''
-  "begin ... end":
+  "declare":
+    prefix: "declare"
+    body: "declare"
+  "begin":
     prefix: "begin"
-    body: '''
-      BEGIN
-        $0
-
-      EXCEPTION
-        WHEN ${1:OTHERS} THEN
-          raise;
-      END;
-    '''
+    body: "begin"
+  "end":
+    prefix: "end"
+    body: "end"
+  "create or replace":
+    prefix: "create replace"
+    body: "create or replace"
+  "view":
+    prefix: "view"
+    body: "view"
+  "materialized view":
+    prefix: "matview"
+    body: "materialized view"
+  "table":
+    prefix: "table"
+    body: "table"
+  "function":
+    prefix: "function"
+    body: "function"
+  "type":
+    prefix: "type"
+    body: "type"
+  "object":
+    prefix: "object"
+    body: "object"
+  "New Function":
+    prefix: "funccreate"
+    body: "function ${1:function_name}(\n\t${2:p_param_name} in ${3:data_type};\n) return ${4:return_type}\nas\n\t$5\nbegin\n\n\t$6\n\nend $1;"
+  "New Procedure":
+    prefix: "proccreate"
+    body: "procedure ${1:procedure_name}(\n\t${2:p_param_name} in ${3:data_type};\n)\nas\n\t$4\nbegin\n\n\t$5\n\nend $1;"
+  "Anonymous block":
+    prefix: "anonb"
+    body: "declare\n\t${1:l_variable} ${2:data_type};\nbegin\n\n\t$0\n\nexception\n\twhen ${3:others}\n\tthen\n\t\traise;\nend;"
   "elsif ...":
-    prefix: "e"
-    body: '''
-      ELSIF ${1:condition}
-      THEN
-      	$0
-    '''
+    prefix: "elsif"
+    body: "elsif ${1:condition}\nthen\n\t$0"
   "if ... else ... end":
-    prefix: "ife"
-    body: '''
-      IF ${1:condition}
-      THEN
-      	$2
-      ELSE
-      	$3
-      END IF;
-    '''
+    prefix: "ifelse"
+    body: "if ${1:condition}\nthen\n\t$2\nelse\n\t$3\nend if;"
   "if ... end":
-    prefix: "if"
-    body: '''
-      IF ${1:condition}
-      THEN
-      	$0
-      END IF;
-    '''
+    prefix: "ifthen"
+    body: "if ${1:condition}\nthen\n\t$0\nend if;"
   "loop ... end":
     prefix: "loop"
-    body: '''
-      LOOP
-      	$0
-      END LOOP;
-    '''
+    body: "loop\n\t$0\nend loop;"
+  "for i in ":
+    prefix: "forloop"
+    body: "for i in 1..${1:collection_name}.count\nloop\n\t$0\nend loop;"
