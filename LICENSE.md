@@ -22,7 +22,7 @@ SOFTWARE.
 
 ---
 
-note: The original TextMate bundle (https://github.com/mulander/oracle.tmbundle)
+note: The original [TextMate bundle](https://github.com/mulander/oracle.tmbundle)
 was licensed under the GNU GPLv2 license, per:
 
                     GNU GENERAL PUBLIC LICENSE
