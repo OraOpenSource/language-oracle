@@ -6,7 +6,7 @@ In order to publish any changes, you need to do so with the command line utility
 $ apm login
 Welcome to Atom!
 
-Before you can publish packages, you'll need an API token.
+Before you can publish packages, you will need an API token.
 
 Visit your account page on Atom.io https://atom.io/account,
 copy the token and paste it below when prompted.
