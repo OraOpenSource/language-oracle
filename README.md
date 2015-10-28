@@ -4,6 +4,8 @@ Add syntax highlighting support for Oracle PL/SQL code
 
 This code was [converted](http://atom.io/docs/latest/converting-a-text-mate-bundle) from the [Oracle TextMate bundle](https://github.com/mulander/oracle.tmbundle) on the 24th October 2015.
 
+Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.
+
 ## Package conflicts
 
 1. [file-types](https://atom.io/packages/file-types)
