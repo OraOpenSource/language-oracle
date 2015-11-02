@@ -503,5 +503,257 @@ patterns: [
     match: "(?i)\\b(access_into_null|case_not_found|collection_is_null|cursor_already_open|dup_val_on_index|invalid_cursor|invalid_number|login_denied|no_data_found|not_logged_on|program_error|rowtype_mismatch|self_is_null|storage_error|subscript_beyond_count|subscript_outside_limit|sys_invalid_rowid|timeout_on_resource|too_many_rows|value_error|zero_divide)\\b"
     name: "storage.exception.type.oracle"
   }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_application\\.)(g_user|g_flow_id|g_flow_step_id|g_flow_owner|g_request|g_browser_language|g_debug|g_home_link|g_login_url|g_image_prefix|g_flow_schema_owner|g_printer_friendly|g_proxy_server|g_sysdate|g_public_user|g_global_notification|g_x01|g_x02|g_x03|g_x04|g_x05|g_x06|g_x07|g_x08|g_x09|g_x10|help|stop_apex_engine)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_application_install\\.)(clear_all|generate_applicaiton_id|generate_offset|get_application_alias|get_application_id|get_application_name|get_auto_install_sup_obj|get_image_prefix|get_offset|get_proxy|get_schema|get_workspace_id|set_application_alias|set_application_id|set_application_name|set_auto_install_sup_obj|set_image_prefix|set_offset|set_proxy|set_schema|set_workspace_id)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_authentication\\.)(callback|get_callback_url|get_login_username_cookie|is_authenticated|is_public_user|login|logout|post_login|send_login_username_cookie)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_authorization\\.)(enable_dynamic_groups|is_authorized|reset_cache)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_collection\\.)(add_member|add_members|collection_exists|collection_has_changed|collection_member_count|crete_collection|create_or_truncate_collection|create_collection_from_query|create_collection_form_query2|create_collection_from_query_b|create_collection_from_query_b2|delete_all_collections|delete_all_collections_session|delete_collection|delete_member|delete_members|get_member_md5|merge_members|move_member_down|move_member_up|resequence_collection|reset_collection_changed|reset_collection_changed_all|sort_members|truncate_collection|update_member|update_members|update_member_attribute)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_css\\.)(add|add_3rd_party_library_file|add_file)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_custom_auth\\.)(application_page_item_exists|current_page_is_public|define_user_session|get_cookie_props|get_ldap_props|get_next_session_id|get_security_group_id|get_session_id|get_session_id_from_cookie|get_user|get_username|is_session_valid|login|logout|post_login|session_id_exists|set_session_id|set_session_id_to_next_value|set_user)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_debug\\.)(disable|enable|enter|error|info|log_dbms_output|log_long_message|log_message|log_page_session_state|message|remove_debug_by_age|remove_debug_by_app|remove_debug_by_view|remove_session_messages|tochar|trace|warn)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_error\\.)(add_error|auto_set_associated_item|extract_constraint_name|get_aria_error_attributes|get_first_ora_error_text|init_error_result)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_escape\\.)(html|html_attribute|html_trunc|html_whitelist|js_literal|json|ldap_dn|ldap_search_filter|noop|regexp|set_html_escaping_mode)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_instance_admin\\.)(add_schema|add_workspace|create_schema_exception|free_workspace_app_ids|get_parameter|get_schemas|get_workspace_parameter|remove_application|remove_saved_reports|remove_schema|remove_schema_exception|remove_schema_exceptions|remove_subscription|remove_workspace|remove_workspace_exceptions|reserve_workspace_exceptions|reserve_workspace_app_ids|restrict_schema|set_log_switch_interval|set_workspace_parameter|set_parameter|set_workspace_consumer_group|truncate_log|unrestrict_schema)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_ir\\.)(add_filter|change_subscription_email|change_report_owner|change_subscription_email|change_subscription_lang|clear_report|delete_report|delete_subscription|get_last_viewed_report_id|get_report|reset_report)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_item\\.)(checkbox2|date_popup|date_popup2|display_and_save|hidden|md5_checksum|md5_hidden|popup_from_lov|popup_from_query|radiogroup|select_list|select_list_from_lov|select_list_from_lov_xl|select_list_from_query|select_list_from_query_xl|text|textarea|text_from_lov|text_from_lov_query)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_javascript\\.)(add_3rd_party_library_file|add_attribute|add_inline_code|add_library|add_onload_code|add_value|escape)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_json\\.)(close_all|close_array|close_object|does_exist|find_paths_like|free_output|flush|get_boolean|get_clob_output|get_count|get_date|get_members|get_number|get_value|get_varchar2|initialize_clob_output|initialize_output|open_array|open_object|parse|stringify|to_xmltype|write)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_lang\\.)(create_language_mapping|delete_language_mapping|lang|message|publish_application|seed_translations|update_language_mapping|update_message|update_translated_string)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_ldap\\.)(authenticate|get_all_user_attributes|get_user_attributes|is_member|member_of|member_of2|search)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_mail\\.)(add_attachment|get_images_url|get_instance_url|push_queue|send)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_page\\.)(is_desktop_ui|is_jqm_smartphone_ui|is_jqm_tablet_ui|get_ui_type|is_read_only|get_page_mode|purge_cache|get_url)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_plsql_job\\.)(jobs_are_enabled|purge_process|submit_process|time_elapsed|update_job_status)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_plugin\\.)(get_ajax_identifier|get_input_name_for_page_item)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_plugin_util\\.)(debug_dynamic_action|debug_page_item|debug_process|debug_region|escape|execute_plsql_code|get_attribute_as_number|get_data|get_data2|get_display_data|get_element_attributes|get_plsql_expression_result|get_plsql_function_result|get_position_in_list|get_search_string|is_equal|page_item_names_to_jquery|print_display_only|print_escaped_value|print_hidden_if_readonly|print_json_http_header|print_lov_as_json|print_option|replace_substitutions)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_region\\.)(is_read_only|purge_cache)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_spatial\\.)(change_geom_metadata|circle_polygon|delete_geom_metadata|insert_geom_metadata|insert_geom_metadata_lonlat|point|rectangle)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_ui_default_update\\.)(add_ad_column|add_ad_synonym|del_ad_column|del_ad_synonym|del_column|del_group|del_table|synch_table|upd_ad_column|upd_ad_synonym|upd_column|upd_display_in_form|upd_display_in_report|upd_form_region_title|upd_group|upd_item_display_height|upd_item_display_width|upd_item_format_mask|upd_item_help|upd_label|upd_report_alignment|upd_report_format_mask|upd_report_region_title|upd_table)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_util\\.)(cache_get_date_of_page_cache|cache_get_date_of_region_cache|cache_purge_by_application|cache_purge_by_page|cache_purge_stale|change_current_user_pw|change_password_on_firs_use|close_open_db_links|clear_app_cahce|clear_page_cache|clear_user_cache|count_click|create_user|create_user_group|current_user_in_group|custom_calendar|delete_user_group|download_print_document|edit_user|end_user_account_days_left|expire_end_user_account|expire_workspace_account|export_users|fetch_app_item|fetch_user|find_security_group_id|find_workspace|get_account_locked_status|get_attribute|get_authentication_result|get_blob_file_src|get_build_option_status|get_current_user_id|get_default_schema|get_edition|get_email|get_feedback_follow_up|get_file|get_file_id|get_first_name|get_groups_user_belongs_to|get_group_id|get_group_name|get_hash|get_high_constrast_mode_toggle|get_lsat_name|get_numeric_session_state|get_preference|get_print_document|get_screen_read_mode_toggle|get_session_lang|get_session_state|get_session_territory|get_session_time_zone|get_since|get_user_id|get_user_roles|get_username|host_url|html_pct_graph_mask|increment_calendar|ir_clear|ir_delete_report|ir_delete_subscription|ir_filter|ir_reset|is_high_contrast_session|is_high_contrast_session_yn|is_login_password_valid|is_screen_reader_session|is_screen_reader_session_yn|is_username_unique|keyval_num|keyval_vc2|lock_account|password_first_use_occurred|prepare_url|public_check_authorization|purge_regions_by_app|purge_regions_by_name|purge_regions_by_page|redirect_url|remove_preference|remove_sort_preferences|remove_user|reset_authorizations|reset_password|reset_pw|savekey_num|savekey_vc2|set_attribute|set_authentication_result|set_build_option_status|set_current_theme_style|set_custom_auth_status|set_edition|set_email|set_first_name|set_group_group_grants|set_group_user_grants|seT_last_name|set_preference|set_security_group_id|set_session_high_contrast_off|set_session_high_contrast_on|set_session_lang|set_session_lifetime_seconds|set_session_max_idle_seconds|set_session_screen_reader_off|set_session_screen_reader_on|set_session_state|set_session_territory|set_session_time_zone|set_username|show_high_contrast_mode_toggle|show_screen_reader_mode_toggle|string_to_table|strong_password_check|strong_password_validation|submit_feedback|submit_feedback_followup|table_to_string|unexpire_end_user_account|unexpire_workspace_account|unlock_account|url_encode|workspace_account_days_left)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_web_service\\.)(blob2clobbase64|clobbase642blob|make_request|make_reset_request|make_reset_request_b|parse_response|parse_response_clob|parse_xml|parse_xml_clob)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
+    match: "(?i)\\b(apex_zip\\.)(add_file|finish|get_file_content|get_files)\\b"
+    name: "support.class.oracle"
+  }
 ]
 scopeName: "source.plsql.oracle"
