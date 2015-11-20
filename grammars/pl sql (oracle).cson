@@ -8,6 +8,9 @@ fileTypes: [
   "pls"
   "bdy"
   "spc"
+  "trg"
+  "tps"
+  "vw"
 ]
 foldingStartMarker: "(?i)^\\s*(begin|if|loop)\\b"
 foldingStopMarker: "(?i)^\\s*(end)\\b"
