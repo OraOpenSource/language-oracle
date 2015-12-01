@@ -1,34 +1,10 @@
 ".source.plsql.oracle":
-  "declare":
-    prefix: "declare"
-    body: "declare"
-  "begin":
-    prefix: "begin"
-    body: "begin"
-  "end":
-    prefix: "end"
-    body: "end"
   "create or replace":
     prefix: "create replace"
     body: "create or replace"
-  "view":
-    prefix: "view"
-    body: "view"
   "materialized view":
     prefix: "matview"
     body: "materialized view"
-  "table":
-    prefix: "table"
-    body: "table"
-  "function":
-    prefix: "function"
-    body: "function"
-  "type":
-    prefix: "type"
-    body: "type"
-  "object":
-    prefix: "object"
-    body: "object"
   "New Function":
     prefix: "funccreate"
     body: "function ${1:function_name}(\n\t${2:p_param_name} in ${3:data_type};\n) return ${4:return_type}\nas\n\t$5\nbegin\n\n\t$6\n\nend $1;"
