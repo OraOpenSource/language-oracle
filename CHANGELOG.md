@@ -1,3 +1,8 @@
+## 1.4.1
+
+* Improve readability of snippets
+* Syntax highlighting for function/procedures when prefixed with  create[ or replace]
+
 ## 1.4
 
 * Add regexp_like
