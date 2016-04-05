@@ -7,25 +7,83 @@
     body: "materialized view"
   "New Function":
     prefix: "funccreate"
-    body: "function ${1:function_name}(\n\t${2:p_param_name} in ${3:data_type};\n) return ${4:return_type}\nas\n\t$5\nbegin\n\n\t$6\n\nend $1;"
+    body: """
+		function ${1:function_name}(
+			${2:p_param_name} in ${3:data_type};
+		)
+			return ${4:return_type}
+		as
+			$5
+		begin
+			$6
+		end $1;
+    """
   "New Procedure":
     prefix: "proccreate"
-    body: "procedure ${1:procedure_name}(\n\t${2:p_param_name} in ${3:data_type};\n)\nas\n\t$4\nbegin\n\n\t$5\n\nend $1;"
+    body: """
+		procedure ${1:procedure_name}(
+			${2:p_param_name} in ${3:data_type};
+		)
+		as
+			$4
+		begin
+
+			$5
+
+		end $1;
+    """
   "Anonymous block":
     prefix: "anonb"
-    body: "declare\n\t${1:l_variable} ${2:data_type};\nbegin\n\n\t$0\n\nexception\n\twhen ${3:others}\n\tthen\n\t\traise;\nend;"
+    body: """
+		declare
+			${1:l_variable} ${2:data_type};
+		begin
+
+			$0
+
+		exception
+		when ${3:others}
+		then
+			raise;
+		end;
+    """
   "elsif ...":
     prefix: "elsif"
-    body: "elsif ${1:condition}\nthen\n\t$0"
+    body: """
+		elsif ${1:condition}
+		then
+			$0
+    """
   "if ... else ... end":
     prefix: "ifelse"
-    body: "if ${1:condition}\nthen\n\t$2\nelse\n\t$3\nend if;"
+    body: """
+		if ${1:condition}
+		then
+			$2
+		else
+			$3
+		end if;
+    """
   "if ... end":
     prefix: "ifthen"
-    body: "if ${1:condition}\nthen\n\t$0\nend if;"
+    body: """
+		if ${1:condition}
+		then
+			$0
+		end if;
+    """
   "loop ... end":
     prefix: "loop"
-    body: "loop\n\t$0\nend loop;"
+    body: """
+		loop
+			$0
+		end loop;
+    """
   "for i in ":
     prefix: "forloop"
-    body: "for i in 1..${1:collection_name}.count\nloop\n\t$0\nend loop;"
+    body: """
+		for i in 1..${1:collection_name}.count
+		loop
+			$0
+		end loop;
+    """
