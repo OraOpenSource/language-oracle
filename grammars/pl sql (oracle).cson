@@ -84,7 +84,7 @@ patterns: [
         name: "keyword.other.oracle"
       "4":
         name: "entity.name.function.oracle"
-    match: "(?i)^\\s*(OVERRIDING)?\\s*(MEMBER|CONSTRUCTOR|STATIC)?\\s*(function|procedure)\\s+([-a-z0-9_]+)"
+    match: "(?i)\\s*(OVERRIDING)?\\s*(MEMBER|CONSTRUCTOR|STATIC)?\\s*(function|procedure)\\s+([-a-z0-9_]+)"
     name: "meta.procedure.oracle"
   }
   {
