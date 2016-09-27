@@ -124,14 +124,6 @@ patterns: [
     name: "variable.language.oracle"
   }
   {
-    match: "(?i)\\b(p(i|o|io|n|ar|v)_[-a-z0-9_]+)\\b"
-    name: "variable.parameter.oracle"
-  }
-  {
-    match: "(?i)\\b(l_[-a-z0-9_]+)\\b"
-    name: "variable.other.oracle"
-  }
-  {
     match: "(?i):\\b(new|old)\\b"
     name: "variable.trigger.oracle"
   }
