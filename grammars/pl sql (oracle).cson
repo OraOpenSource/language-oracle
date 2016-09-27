@@ -55,7 +55,7 @@ patterns: [
       "2":
         name: "keyword.other.oracle"
       "3":
-        name: "entity.name.type.oracle"
+        name: "entity.name.object.oracle"
     match: "(?i)\\b(package)(\\s+body)?\\s+(\\S+)"
     name: "meta.package.oracle"
   }
@@ -95,7 +95,7 @@ patterns: [
       "3":
         name: "keyword.other.oracle"
       "4":
-        name: "entity.name.function.oracle"
+        name: "entity.name.object.oracle"
     match: "(?i)\\s*(OVERRIDING)?\\s*(MEMBER|CONSTRUCTOR|STATIC)?\\s*(function|procedure)\\s+([-a-z0-9_]+)"
     name: "meta.procedure.oracle"
   }
@@ -138,6 +138,17 @@ patterns: [
   {
     match: "(?i):\\b(new|old)\\b"
     name: "variable.trigger.oracle"
+  }
+  {
+   captures:
+     "1":
+       name: "keyword.other.oracle"
+     "2":
+       name: "entity.name.object.oracle"
+     "3":
+       name: "source.plsql.oracle"
+   match: "(?i)\\b(end)\\s+(\\w+)"
+   name: "keyword.other.end.oracle"
   }
   {
     match: "(?i)\\b(end|then|deterministic|exception|when|exists|others|subtype|constant|range|declare|begin|in|out|to|is|as|exit|raise|cursor|record|open|fetch|into|close|%type|%rowtype|execute|comment|column|synonym|sequence|index\\s+by|start\\s+with|increment\\s+by|cache|pragma|grant|start|alter|database|datafile|autoextend|trigger|after|before|each|row|default|\\.(extend|count|first|last|next|nextval|currval|reverse))\\b"
