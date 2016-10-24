@@ -31,6 +31,10 @@ foldingStopMarker: "(?i)^\\s*(end)\\b"
 name: "PL/SQL (Oracle)"
 patterns: [
   {
+    match: "^.*(logger\\.|logger_logs\\.).*$"
+    name: "logger.oracle"
+  }
+  {
     begin: "/\\*"
     end: "\\*/"
     name: "comment.block.oracle"
