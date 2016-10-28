@@ -1,3 +1,7 @@
+## 1.6.0
+
+* Add `logger` styling
+
 ## 1.5.0
 
 * Remove variable name styling
