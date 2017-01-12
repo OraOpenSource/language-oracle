@@ -1,3 +1,8 @@
+## 1.6.1
+
+* Remove MIT license and stick with GPLv2
+* Remove deprecated `::shadow` selector
+
 ## 1.6.0
 
 * Add `logger` styling
