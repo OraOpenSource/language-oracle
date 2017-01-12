@@ -1,6 +1,6 @@
 {
   "name": "language-oracle",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Oracle PL/SQL language support in Atom",
   "keywords": [
     "oracle",
