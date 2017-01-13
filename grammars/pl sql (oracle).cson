@@ -276,6 +276,15 @@ patterns: [
         name: "support.class.oracle"
       "2":
         name: "support.function.oracle"
+    match: "(?i)\\b(dbms_xmldom\\.)(domattr|domcdatasection|domcharacterdata|domcomment|domdocument|domdocumentfragment|domdocumenttype|domelement|domentity|domentityreference|domimplementation|domnamednodemap|domnode|domnodelist|domnotation|domprocessinginstruction|domtext|adoptnode|appendchild|appenddata|clonenode|createattribute|createcdatasection|createcomment|createdocument|createdocumentfragment|createelement|createentityreference|createprocessinginstruction|createtextnode|deletedata|findentity|findnodation|freedocfrag|freedocument|freeelement|freenode|freenodelist|getattribute|getattributenode|getattributes|getcharset|getchildnodes|getchildrenbytagname|getdata|getdoctype|getdocumentelement|getelementsbytagname|getentities|getexpandedname|getfirstchild|getimplementation|getlastchild|getlength|getlocalname|getname|getnameditem|getnamespace|getnextsibling|getnodename|getnodetype|getnodevalue|getnodevalueasbinarystream|getnodevalueascharacterstream|getnotationname|getnotations|gettarget|getownerdocument|getownerelement|getparentnode|getprefix|getprevioussibling|getpublicid|getqualifiedname|getschemanode|getspecified|getstandalone|getsystemid|gettagname|getvalue|getversion|getxmltype|hasattributes|hasattribute|haschildnodes|hasfeature|importnode|insertbefore|insertdata|isnull|item|makeattr|makecdatasection|makecharacterdata|makecomment|makedocument|makedocumentfragment|makedocumenttype|makeelement|makeentity|makeentityreference|makenode|makenotation|makeprocessinginstruction|maketext|newdomdocument|normalize|removeattribute|removeattributenode|removechild|removenameditem|replacechild|replacedata|resolvenamespaceprefix|setattribute|setattributenode|setcharset|setdata|setdocutype|setnameditem|setnodevalue|setnodevalueasbinarystream|setnodevalueascharacterstream|setprefix|setstandalone|setvalue|setversion|splittext|substringdata|usebinarystream|writetobuffer|writetoclob|writetofile)\\b"
+    name: "support.class.oracle"
+  }
+  {
+    captures:
+      "1":
+        name: "support.class.oracle"
+      "2":
+        name: "support.function.oracle"
     match: "(?i)\\b(utl_raw\\.)(bit_and|bit_complement|bit_or|bit_xor|cast_from_binary_double|cast_from_binary_float|cast_from_binary_integer|cast_from_number|cast_to_binary_double|cast_to_binary_float|cast_to_binary_integer|cast_to_number|cast_to_raw|cast_to_varchar2|cast_to_nvarchar2|compare|concat|convert|copies|length|overlay|reverse|substr|translate|transliterate|xrange)\\b"
     name: "support.class.oracle"
   }
