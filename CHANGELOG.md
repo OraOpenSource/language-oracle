@@ -1,3 +1,7 @@
+## 1.6.2
+
+* Incorrect selector for logger calls
+
 ## 1.6.1
 
 * Remove MIT license and stick with GPLv2
