@@ -155,11 +155,11 @@ patterns: [
    name: "keyword.other.end.oracle"
   }
   {
-    match: "(?i)\\b(end|then|deterministic|exception|when|exists|others|subtype|constant|range|declare|begin|in|out|to|is|as|exit|raise|cursor|record|open|fetch|into|close|%type|%rowtype|execute|comment|column|synonym|sequence|index\\s+by|start\\s+with|increment\\s+by|cache|pragma|grant|start|alter|database|datafile|autoextend|trigger|after|before|each|row|default|\\.(extend|count|first|last|next|nextval|currval|reverse)|sqlerror|oserror|connect|space)\\b"
+    match: "(?i)\\b(end|then|deterministic|exception|when|exists|others|subtype|constant|range|declare|begin|in|out|to|is|as|exit|raise|cursor|record|open|fetch|into|close|%type|%rowtype|execute|comment|column|synonym|sequence|index\\s+by|start\\s+with|increment\\s+by|cache|pragma|grant|start|alter|database|datafile|autoextend|trigger|after|before|each|row|default|\\.(extend|count|first|last|next|nextval|currval|reverse)|connect|space|cascade|shrink|partition|modify|enable|disable|add|validate|novalidate|including|compress|nocompress)\\b"
     name: "keyword.other.oracle"
   }
   {
-    match: "(?i)\\b(select|from|inner\\s+join|left\\s+join|left\\s+outer\\s+join|right\\s+join|right\\s+outer|join|full\\s+join|full\\s+outer\\s+join|on|off|where|order\\s+by|group\\s+by|asc|desc|update|set|all|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of|drop|between|whenever)\\b"
+    match: "(?i)\\b(select|from|inner\\s+join|left\\s+join|left\\s+outer\\s+join|right\\s+join|right\\s+outer|join|full\\s+join|full\\s+outer\\s+join|on|off|where|order\\s+by|group\\s+by|asc|desc|update|set|all|insert|into|values|returning|delete|from|distinct|union|having|limit|table|tablespace|of|drop|between|whenever|sqlerror|oserror|index|indexes|with|pctfree|initrans|storage|initial|pctincrease|parallel|noparallel|by|maxvalue|nomaxvalue|nocache|pctused)\\b"
     name: "keyword.other.sql.oracle"
   }
   {
@@ -529,7 +529,7 @@ patterns: [
     name: "string.quoted.double.oracle"
   }
   {
-    match: "(?i)\\b(varchar2|nvarchar2|number|integer|float|long|date|binary_float|binary_double|timestamp|interval|raw|long\\s+raw|rowid|urowid|char|nchar|clob|nclob|blob|bfile|boolean|pls_integer|binary_integer|natural|naturaln|positive|positiven|signtype|simple_integer)\\b"
+    match: "(?i)\\b(varchar2|nvarchar2|number|integer|float|long|date|binary_float|binary_double|timestamp|interval|raw|long\\s+raw|rowid|urowid|char|nchar|clob|nclob|blob|bfile|boolean|pls_integer|binary_integer|natural|naturaln|positive|positiven|signtype|simple_integer|day|second|byte)\\b"
     name: "storage.type.oracle"
   }
   {
