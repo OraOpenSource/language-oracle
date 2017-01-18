@@ -121,7 +121,7 @@ patterns: [
   }
   {
     match: "(?i)\\b(or|and|not|like)\\b"
-    name: "keyword.operator.oracle"
+    name: "keyword.other.oracle"
   }
   {
     match: "(?i)\\b(sysdate|%(isopen|found|notfound|rowcount)|commit|rollback|sqlerrm|substr|cast|decode|length|lower|upper)\\b"
@@ -159,7 +159,7 @@ patterns: [
     name: "keyword.other.oracle"
   }
   {
-    match: "(?i)\\b(select|from|inner\\s+join|left\\s+join|left\\s+outer\\s+join|right\\s+join|right\\s+outer|join|full\\s+join|full\\s+outer\\s+join|on|off|where|order\\s+by|group\\s+by|asc|desc|update|set|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of|drop|between)\\b"
+    match: "(?i)\\b(select|from|inner\\s+join|left\\s+join|left\\s+outer\\s+join|right\\s+join|right\\s+outer|join|full\\s+join|full\\s+outer\\s+join|on|off|where|order\\s+by|group\\s+by|asc|desc|update|set|all|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of|drop|between)\\b"
     name: "keyword.other.sql.oracle"
   }
   {
