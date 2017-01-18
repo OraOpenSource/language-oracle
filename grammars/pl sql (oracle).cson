@@ -121,7 +121,7 @@ patterns: [
   }
   {
     match: "(?i)\\b(or|and|not|like)\\b"
-    name: "keyword.operator.oracle"
+    name: "keyword.other.oracle"
   }
   {
     match: "(?i)\\b(sysdate|%(isopen|found|notfound|rowcount)|commit|rollback|sqlerrm|substr|cast|decode|length|lower|upper)\\b"
