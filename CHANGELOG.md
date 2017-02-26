@@ -1,3 +1,7 @@
+## 1.7.0
+
+* Remove snippets
+
 ## 1.6.2
 
 * Incorrect selector for logger calls
