@@ -782,7 +782,7 @@ patterns: [
   {
     captures:
       "1":
-        name: "entity.class.oracle"
+        name: "support.class.oracle"
       "2":
         name: "support.function.oracle"
     match: "(?i)\\b(apex_zip\\.)(add_file|finish|get_file_content|get_files)\\b"
@@ -793,21 +793,21 @@ patterns: [
     'match': '\\s*\\.?\\s*([a-zA-Z_]\\w*)(?=\\()'
     'captures':
       '1':
-        'name': 'support.function.oracle'
+        'name': 'entity.name.function.oracle'
   }
   {
     # obj in obj.prop, obj.methodCall()
     'match': '[a-zA-Z_$][\\w$]*(?=\\s*\\.\\s*[a-zA-Z_$]\\w*)'
-    'name': 'support.class.oracle'
+    'name': 'variable.other.object.oracle'
   }
   {
     # prop in obj.prop, func().prop
     'match': '(\\.)\\s*(\\$*[a-zA-Z_$][\\w$]*)'
     'captures':
       '1':
-        'name': 'meta.delimiter.property.period.js'
+        'name': 'meta.delimiter.property.period.oracle'
       '2':
-        'name': 'support.class.oracle'
+        'name': 'variable.other.property.oracle'
   }
 ]
 scopeName: "source.plsql.oracle"
