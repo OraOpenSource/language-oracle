@@ -788,5 +788,26 @@ patterns: [
     match: "(?i)\\b(apex_zip\\.)(add_file|finish|get_file_content|get_files)\\b"
     name: "support.class.oracle"
   }
+  {
+    name: 'meta.function.oracle'
+    match: '\\s*\\.?\\s*([a-zA-Z_]\\w*)(?=\\()'
+    captures:
+      "1":
+        name: 'entity.name.function.oracle'
+  }
+  {
+    # obj in obj.prop, obj.methodCall()
+    name: 'variable.other.object.oracle'
+    match: '[a-zA-Z_$][\\w$]*(?=\\s*\\.\\s*[a-zA-Z_$]\\w*)'
+  }
+  {
+    # prop in obj.prop, func().prop
+    match: '(\\.)\\s*(\\$*[a-zA-Z_$][\\w$]*)'
+    captures:
+      "1":
+        name: 'meta.delimiter.property.period.oracle'
+      "2":
+        name: 'variable.other.property.oracle'
+  }
 ]
 scopeName: "source.plsql.oracle"
