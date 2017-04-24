@@ -789,25 +789,25 @@ patterns: [
     name: "support.class.oracle"
   }
   {
-    'name': 'meta.function.oracle'
-    'match': '\\s*\\.?\\s*([a-zA-Z_]\\w*)(?=\\()'
-    'captures':
-      '1':
-        'name': 'entity.name.function.oracle'
+    name: 'meta.function.oracle'
+    match: '\\s*\\.?\\s*([a-zA-Z_]\\w*)(?=\\()'
+    captures:
+      "1":
+        name: 'entity.name.function.oracle'
   }
   {
     # obj in obj.prop, obj.methodCall()
-    'match': '[a-zA-Z_$][\\w$]*(?=\\s*\\.\\s*[a-zA-Z_$]\\w*)'
-    'name': 'variable.other.object.oracle'
+    match: '[a-zA-Z_$][\\w$]*(?=\\s*\\.\\s*[a-zA-Z_$]\\w*)'
+    name: 'variable.other.object.oracle'
   }
   {
     # prop in obj.prop, func().prop
-    'match': '(\\.)\\s*(\\$*[a-zA-Z_$][\\w$]*)'
-    'captures':
-      '1':
-        'name': 'meta.delimiter.property.period.oracle'
-      '2':
-        'name': 'variable.other.property.oracle'
+    match: '(\\.)\\s*(\\$*[a-zA-Z_$][\\w$]*)'
+    captures:
+      "1":
+        name: 'meta.delimiter.property.period.oracle'
+      "2":
+        name: 'variable.other.property.oracle'
   }
 ]
 scopeName: "source.plsql.oracle"
