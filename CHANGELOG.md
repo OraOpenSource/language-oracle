@@ -1,3 +1,8 @@
+## 1.8.0
+
+* Add matching for function calls not in the standard library  
+(this relates to issue #10. Seems other grammars do a similar thing, so giving this ago - may consider withdrawing this if it doesn't seem effective, and go back to restricting highlights to the standard library)
+
 ## 1.7.0
 
 * Remove snippets
