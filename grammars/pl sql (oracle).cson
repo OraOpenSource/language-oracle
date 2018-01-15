@@ -108,7 +108,7 @@ patterns: [
     name: "keyword.operator.oracle"
   }
   {
-    match: "(?i)\\b(true|false|null)\\b"
+    match: "(?i)\\b(true|false|null|is\\s+null|is\\s+not\\s+null)\\b"
     name: "constant.language.oracle"
   }
   {
