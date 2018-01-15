@@ -1,3 +1,8 @@
+##  1.9.0
+
+* Add => as an operator to support ligatures
+* Make `is null` and `is not null` be styled as one block
+
 ## 1.8.0
 
 * Add matching for function calls not in the standard library  
