@@ -17,4 +17,4 @@ Contributions are greatly appreciated. Please fork this repository and open a pu
     pls: "source.sql"
     plb: "source.sql"
 ```
-This is no longer necessary, as this grammer picks up all relevant extensions and correctly maps them to `PL/SQL (Oracle)`. You should be able to safely remove that configuration.
+This is no longer necessary, as this grammar picks up all relevant extensions and correctly maps them to `PL/SQL (Oracle)`. You should be able to safely remove that configuration.
